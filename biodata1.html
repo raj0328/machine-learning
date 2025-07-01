@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body {
+            background-color: #c0fccf;
+            font-family: Arial, sans-serif;
+        }
+        fieldset {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: calc(100% - 10px);
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>BIODATA</legend>
+            <ul>
+                <li>ENTER DETAILS IN CAPITAL LETTER</li>
+                <li>ONCE SUBMITTED THE DETAILS CANNOT BE CHANGED</li>
+                <li>ENTER VALID DETAILS</li>
+                <li>THE FORM IS VALID TILL TOMORROW</li>
+                <li>FOR MORE DETAILS CONTACT T&P</li>
+            </ul>
+            <label for="name">NAME:</label>
+            <input type="text" id="name" required>
+
+            <label for="rollno">ROLL NO:</label>
+            <input type="text" id="rollno" required>
+
+            <label for="fatherName">FATHER'S NAME:</label>
+            <input type="text" id="fatherName" required>
+
+            <label>GENDER:</label>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" required>
+
+            <label for="height">ENTER HEIGHT:</label>
+            <input type="text" id="height" required>
+
+            <label for="weight">ENTER WEIGHT:</label>
+            <input type="text" id="weight" required>
+
+            <label for="age">ENTER AGE:</label>
+            <input type="text" id="age" required>
+
+            <label for="semester">ENTER SEMESTER:</label>
+            <input type="text" id="semester" required>
+
+            <label for="cgpa">ENTER CGPA:</label>
+            <input type="text" id="cgpa" required>
+
+            <label for="hostelName">ENTER HOSTEL NAME:</label>
+            <input type="text" id="hostelName" required>
+
+            <label for="aadhaarNo">ENTER AADHAAR NO:</label>
+            <input type="text" id="aadhaarNo" required>
+
+            <label for="address">ENTER ADDRESS:</label>
+            <input type="text" id="address" required>
+
+            <input type="submit" value="SUBMIT">
+        </fieldset>
+    </form>
+</body>
+</html>
